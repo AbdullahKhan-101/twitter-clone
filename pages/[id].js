@@ -20,6 +20,7 @@ import { ArrowLeftIcon } from "@heroicons/react/solid";
 import Head from "next/head";
 import Comment from "../components/Comment";
 import Widgets from "../components/Widgets";
+import Login from "../components/Login";
 
 function PostPage({ trendingResults, providers }) {
   const { data: session } = useSession();

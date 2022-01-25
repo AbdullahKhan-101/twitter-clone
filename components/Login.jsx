@@ -8,6 +8,7 @@ const Login = ({ providers }) => {
         src="https://rb.gy/ogau5a"
         width={150}
         height={150}
+        alt="logo"
         objectFit="contain"
       />
       <div>

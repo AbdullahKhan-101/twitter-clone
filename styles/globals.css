@@ -1,5 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black;
+  }
+}
+
+@layer components {
+  .hoverAnimation {
+    @apply hover:bg-[#dddddd] hover:bg-opacity-20 rounded-full
+    cursor-pointer w-[52px] h-[52px] xl:w-auto xl:h-auto xl:py-3 xl:px-4
+    transition duration-200 ease-out;
+  }
+  .icon {
+    @apply cursor-pointer w-9 h-9 hover:bg-[#1d9bf0] hover:bg-opacity-20 flex items-center justify-center rounded-full;
+  }
+  .hide {
+    @apply z-10 hidden px-3 py-1 text-black rounded-md cursor-pointer hover:text-red-600 bg-slate-200 active:bg-slate-400;
+  }
+  .show:hover .hide {
+    @apply hidden xl:block;
+  }
+
+}
+
 html,
 body {
+  background-color: black;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
